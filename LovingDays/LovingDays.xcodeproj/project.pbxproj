@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B04B00121B2B35500064759 /* YLCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04AFF621B2B30400064759 /* YLCircleProgress.swift */; };
+		4B04B00221B2B35E00064759 /* YLCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04AFF521B2B30400064759 /* YLCircle.swift */; };
+		4B04B00321B2B36000064759 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04AFF421B2B30400064759 /* Utils.swift */; };
+		4B04B00421B2B36300064759 /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B04AFF721B2B30400064759 /* endPoint.png */; };
+		4B04B00721B2F1E900064759 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04B00621B2F1E900064759 /* BaseVC.swift */; };
+		4B04B00A21B2F2E600064759 /* MainLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04B00921B2F2E600064759 /* MainLogic.swift */; };
+		4B09BBC221A46C2D0006E025 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B09BBC121A46C2D0006E025 /* ScreenSize.swift */; };
+		4B09BBC421A46C6F0006E025 /* CGFloat + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B09BBC321A46C6F0006E025 /* CGFloat + Helpers.swift */; };
+		4B5B527B21AAB59800AAA1CE /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B527A21AAB59800AAA1CE /* UIView+Anchors.swift */; };
 		4B9E52882188953200283FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E52872188953200283FA6 /* AppDelegate.swift */; };
 		4B9E528F2188953300283FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9E528E2188953300283FA6 /* Assets.xcassets */; };
 		4B9E52922188953300283FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9E52902188953300283FA6 /* LaunchScreen.storyboard */; };
 		4B9E529B21889A1600283FA6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E529921889A1600283FA6 /* MainVC.swift */; };
 		4B9E529C21889A1600283FA6 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9E529A21889A1600283FA6 /* MainVC.xib */; };
+		4B9E52A0218A0FB600283FA6 /* HNCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E529F218A0FB600283FA6 /* HNCircleProgress.swift */; };
+		7D956B205A35E0374C3C8DF0 /* Pods_LovingDays.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49349999F550DFA721956556 /* Pods_LovingDays.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49349999F550DFA721956556 /* Pods_LovingDays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovingDays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B04AFF421B2B30400064759 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = YLCircleProgressDemo/CircleProgress/Code/Utils.swift; sourceTree = "<group>"; };
+		4B04AFF521B2B30400064759 /* YLCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YLCircle.swift; path = YLCircleProgressDemo/CircleProgress/Code/YLCircle.swift; sourceTree = "<group>"; };
+		4B04AFF621B2B30400064759 /* YLCircleProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YLCircleProgress.swift; path = YLCircleProgressDemo/CircleProgress/Code/YLCircleProgress.swift; sourceTree = "<group>"; };
+		4B04AFF721B2B30400064759 /* endPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = endPoint.png; path = YLCircleProgressDemo/CircleProgress/Resource/endPoint.png; sourceTree = "<group>"; };
+		4B04B00621B2F1E900064759 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		4B04B00921B2F2E600064759 /* MainLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogic.swift; sourceTree = "<group>"; };
+		4B09BBC121A46C2D0006E025 /* ScreenSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		4B09BBC321A46C6F0006E025 /* CGFloat + Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat + Helpers.swift"; sourceTree = "<group>"; };
+		4B5B527A21AAB59800AAA1CE /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
 		4B9E52842188953200283FA6 /* LovingDays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovingDays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9E52872188953200283FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B9E528E2188953300283FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -22,6 +43,9 @@
 		4B9E52932188953400283FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B9E529921889A1600283FA6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4B9E529A21889A1600283FA6 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		4B9E529F218A0FB600283FA6 /* HNCircleProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCircleProgress.swift; sourceTree = "<group>"; };
+		95495C812685DEF99A709EA2 /* Pods-LovingDays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovingDays.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LovingDays/Pods-LovingDays.debug.xcconfig"; sourceTree = "<group>"; };
+		D16661DB68BA58C2B365F369 /* Pods-LovingDays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovingDays.release.xcconfig"; path = "Pods/Target Support Files/Pods-LovingDays/Pods-LovingDays.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D956B205A35E0374C3C8DF0 /* Pods_LovingDays.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222440F92F34BFFD13F2B7E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95495C812685DEF99A709EA2 /* Pods-LovingDays.debug.xcconfig */,
+				D16661DB68BA58C2B365F369 /* Pods-LovingDays.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B04AFF821B2B30400064759 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B04AFF721B2B30400064759 /* endPoint.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B04B00021B2B30400064759 /* YLCircleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				4B04AFF421B2B30400064759 /* Utils.swift */,
+				4B04AFF521B2B30400064759 /* YLCircle.swift */,
+				4B04AFF621B2B30400064759 /* YLCircleProgress.swift */,
+				4B04AFF821B2B30400064759 /* Resources */,
+			);
+			path = YLCircleProgress;
+			sourceTree = "<group>";
+		};
+		4B04B00521B2F1CA00064759 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				4B04B00621B2F1E900064759 /* BaseVC.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		4B04B00821B2F2C300064759 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4B9E529921889A1600283FA6 /* MainVC.swift */,
+				4B9E529A21889A1600283FA6 /* MainVC.xib */,
+				4B04B00921B2F2E600064759 /* MainLogic.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		4B9E527B2188953200283FA6 = {
 			isa = PBXGroup;
 			children = (
 				4B9E52862188953200283FA6 /* LovingDays */,
 				4B9E52852188953200283FA6 /* Products */,
+				222440F92F34BFFD13F2B7E2 /* Pods */,
+				EAF45A4324B71CF5BEA99A3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +132,11 @@
 				4B9E528E2188953300283FA6 /* Assets.xcassets */,
 				4B9E52902188953300283FA6 /* LaunchScreen.storyboard */,
 				4B9E52932188953400283FA6 /* Info.plist */,
+				4B9E529F218A0FB600283FA6 /* HNCircleProgress.swift */,
+				4B5B527A21AAB59800AAA1CE /* UIView+Anchors.swift */,
+				4B09BBC121A46C2D0006E025 /* ScreenSize.swift */,
+				4B09BBC321A46C6F0006E025 /* CGFloat + Helpers.swift */,
+				4B04B00021B2B30400064759 /* YLCircleProgress */,
 			);
 			path = LovingDays;
 			sourceTree = "<group>";
@@ -66,10 +144,18 @@
 		4B9E529D21889A1C00283FA6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4B9E529921889A1600283FA6 /* MainVC.swift */,
-				4B9E529A21889A1600283FA6 /* MainVC.xib */,
+				4B04B00821B2F2C300064759 /* Main */,
+				4B04B00521B2F1CA00064759 /* BaseVC */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EAF45A4324B71CF5BEA99A3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49349999F550DFA721956556 /* Pods_LovingDays.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B9E52962188953400283FA6 /* Build configuration list for PBXNativeTarget "LovingDays" */;
 			buildPhases = (
+				6AB5229C9DFC6D6005079030 /* [CP] Check Pods Manifest.lock */,
 				4B9E52802188953200283FA6 /* Sources */,
 				4B9E52812188953200283FA6 /* Frameworks */,
 				4B9E52822188953200283FA6 /* Resources */,
@@ -132,19 +219,54 @@
 			files = (
 				4B9E52922188953300283FA6 /* LaunchScreen.storyboard in Resources */,
 				4B9E529C21889A1600283FA6 /* MainVC.xib in Resources */,
+				4B04B00421B2B36300064759 /* endPoint.png in Resources */,
 				4B9E528F2188953300283FA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6AB5229C9DFC6D6005079030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LovingDays-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B9E52802188953200283FA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B09BBC421A46C6F0006E025 /* CGFloat + Helpers.swift in Sources */,
+				4B5B527B21AAB59800AAA1CE /* UIView+Anchors.swift in Sources */,
+				4B09BBC221A46C2D0006E025 /* ScreenSize.swift in Sources */,
+				4B04B00121B2B35500064759 /* YLCircleProgress.swift in Sources */,
 				4B9E529B21889A1600283FA6 /* MainVC.swift in Sources */,
+				4B04B00321B2B36000064759 /* Utils.swift in Sources */,
+				4B9E52A0218A0FB600283FA6 /* HNCircleProgress.swift in Sources */,
+				4B04B00221B2B35E00064759 /* YLCircle.swift in Sources */,
+				4B04B00A21B2F2E600064759 /* MainLogic.swift in Sources */,
 				4B9E52882188953200283FA6 /* AppDelegate.swift in Sources */,
+				4B04B00721B2F1E900064759 /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +402,7 @@
 		};
 		4B9E52972188953400283FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95495C812685DEF99A709EA2 /* Pods-LovingDays.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +422,7 @@
 		};
 		4B9E52982188953400283FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16661DB68BA58C2B365F369 /* Pods-LovingDays.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

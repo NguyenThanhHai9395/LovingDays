@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="LovingDays" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewWidthConstraint" destination="vfw-75-MJG" id="FNO-fW-Bkp"/>
+                <outlet property="vwProgress" destination="lyD-S4-Yew" id="5Q7-2L-ESc"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -22,9 +25,19 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZMy-Ml-zgY">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyD-S4-Yew">
+                    <rect key="frame" x="10" y="25" width="355" height="355"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lyD-S4-Yew" secondAttribute="height" multiplier="1:1" id="otx-EC-uxn"/>
+                        <constraint firstAttribute="width" constant="355" id="vfw-75-MJG"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="0.75728983270000005" blue="0.93920554580000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="lyD-S4-Yew" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BJL-je-klj"/>
+                <constraint firstItem="lyD-S4-Yew" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="CiK-Iz-20R"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZMy-Ml-zgY" secondAttribute="trailing" id="cLP-o3-WKP"/>
                 <constraint firstAttribute="bottom" secondItem="ZMy-Ml-zgY" secondAttribute="bottom" id="har-Hv-vjS"/>
                 <constraint firstItem="ZMy-Ml-zgY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iKK-F3-c18"/>

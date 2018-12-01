@@ -1,20 +1,22 @@
 //
-//  MainVC.swift
+//  BaseVC.swift
 //  LovingDays
 //
-//  Created by ThanhHai on 10/30/18.
+//  Created by ThanhHai on 12/1/18.
 //  Copyright © 2018 ThanhHai. All rights reserved.
 //
 
 import UIKit
 
-class MainVC: UIViewController {
+class BaseVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configView()
-    }
 
+        configView()
+
+    }
+    
     private func configView() {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -39,6 +41,7 @@ class MainVC: UIViewController {
         settingBtn.imageView?.contentMode = .scaleAspectFill
         settingBtn.setImage(UIImage(named: "settings"), for: .normal)
         settingBtn.titleLabel?.font = UIFont.systemFont(ofSize: 30)
+        settingBtn.addTarget(self, action: #selector(tapSetting), for: .touchUpInside)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: settingBtn)
         
     }
@@ -51,4 +54,10 @@ class MainVC: UIViewController {
         settingBtn.titleLabel?.font = UIFont.systemFont(ofSize: 30)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: settingBtn)
     }
+    
+    @objc func tapSetting() {
+
+    }
+
+
 }
