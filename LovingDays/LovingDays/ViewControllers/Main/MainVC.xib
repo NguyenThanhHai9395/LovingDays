@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="LovingDays" customModuleProvider="target">
             <connections>
+                <outlet property="cvwLove" destination="gfw-P1-mlK" id="TSV-H6-bEU"/>
+                <outlet property="pageControl" destination="RRA-gU-uOE" id="cp7-73-ZXd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewWidthConstraint" destination="vfw-75-MJG" id="FNO-fW-Bkp"/>
                 <outlet property="vwProgress" destination="lyD-S4-Yew" id="5Q7-2L-ESc"/>
@@ -27,17 +29,40 @@
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyD-S4-Yew">
                     <rect key="frame" x="10" y="25" width="355" height="355"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gfw-P1-mlK">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="355"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OAO-mG-bg0">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="gfw-P1-mlK" firstAttribute="leading" secondItem="lyD-S4-Yew" secondAttribute="leading" id="2Yr-3i-fes"/>
+                        <constraint firstItem="gfw-P1-mlK" firstAttribute="top" secondItem="lyD-S4-Yew" secondAttribute="top" id="RUC-C5-CuY"/>
+                        <constraint firstAttribute="trailing" secondItem="gfw-P1-mlK" secondAttribute="trailing" id="b5m-cd-qpN"/>
+                        <constraint firstAttribute="bottom" secondItem="gfw-P1-mlK" secondAttribute="bottom" id="kVJ-ZV-cUK"/>
                         <constraint firstAttribute="width" secondItem="lyD-S4-Yew" secondAttribute="height" multiplier="1:1" id="otx-EC-uxn"/>
                         <constraint firstAttribute="width" constant="355" id="vfw-75-MJG"/>
                     </constraints>
                 </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="RRA-gU-uOE">
+                    <rect key="frame" x="176" y="388" width="23" height="37"/>
+                    <color key="pageIndicatorTintColor" red="1" green="0.38431372549999998" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
             </subviews>
             <color key="backgroundColor" red="1" green="0.75728983270000005" blue="0.93920554580000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="lyD-S4-Yew" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BJL-je-klj"/>
                 <constraint firstItem="lyD-S4-Yew" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="CiK-Iz-20R"/>
+                <constraint firstItem="RRA-gU-uOE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K1E-pV-o7Y"/>
+                <constraint firstItem="RRA-gU-uOE" firstAttribute="top" secondItem="lyD-S4-Yew" secondAttribute="bottom" constant="8" id="c1e-bQ-Auu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZMy-Ml-zgY" secondAttribute="trailing" id="cLP-o3-WKP"/>
                 <constraint firstAttribute="bottom" secondItem="ZMy-Ml-zgY" secondAttribute="bottom" id="har-Hv-vjS"/>
                 <constraint firstItem="ZMy-Ml-zgY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iKK-F3-c18"/>

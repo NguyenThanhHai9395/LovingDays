@@ -13,6 +13,10 @@
 		4B04B00421B2B36300064759 /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B04AFF721B2B30400064759 /* endPoint.png */; };
 		4B04B00721B2F1E900064759 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04B00621B2F1E900064759 /* BaseVC.swift */; };
 		4B04B00A21B2F2E600064759 /* MainLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04B00921B2F2E600064759 /* MainLogic.swift */; };
+		4B04B00E21B2FA7300064759 /* CircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04B00C21B2FA7300064759 /* CircleCell.swift */; };
+		4B04B00F21B2FA7300064759 /* CircleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B04B00D21B2FA7300064759 /* CircleCell.xib */; };
+		4B04B01221B385C800064759 /* CountingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B04B01021B385C800064759 /* CountingCell.swift */; };
+		4B04B01321B385C800064759 /* CountingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B04B01121B385C800064759 /* CountingCell.xib */; };
 		4B09BBC221A46C2D0006E025 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B09BBC121A46C2D0006E025 /* ScreenSize.swift */; };
 		4B09BBC421A46C6F0006E025 /* CGFloat + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B09BBC321A46C6F0006E025 /* CGFloat + Helpers.swift */; };
 		4B5B527B21AAB59800AAA1CE /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B527A21AAB59800AAA1CE /* UIView+Anchors.swift */; };
@@ -33,6 +37,10 @@
 		4B04AFF721B2B30400064759 /* endPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = endPoint.png; path = YLCircleProgressDemo/CircleProgress/Resource/endPoint.png; sourceTree = "<group>"; };
 		4B04B00621B2F1E900064759 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		4B04B00921B2F2E600064759 /* MainLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogic.swift; sourceTree = "<group>"; };
+		4B04B00C21B2FA7300064759 /* CircleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCell.swift; sourceTree = "<group>"; };
+		4B04B00D21B2FA7300064759 /* CircleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleCell.xib; sourceTree = "<group>"; };
+		4B04B01021B385C800064759 /* CountingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingCell.swift; sourceTree = "<group>"; };
+		4B04B01121B385C800064759 /* CountingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountingCell.xib; sourceTree = "<group>"; };
 		4B09BBC121A46C2D0006E025 /* ScreenSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
 		4B09BBC321A46C6F0006E025 /* CGFloat + Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat + Helpers.swift"; sourceTree = "<group>"; };
 		4B5B527A21AAB59800AAA1CE /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
@@ -99,11 +107,23 @@
 		4B04B00821B2F2C300064759 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4B04B00B21B2FA4500064759 /* Cell */,
 				4B9E529921889A1600283FA6 /* MainVC.swift */,
 				4B9E529A21889A1600283FA6 /* MainVC.xib */,
 				4B04B00921B2F2E600064759 /* MainLogic.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		4B04B00B21B2FA4500064759 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4B04B00C21B2FA7300064759 /* CircleCell.swift */,
+				4B04B00D21B2FA7300064759 /* CircleCell.xib */,
+				4B04B01021B385C800064759 /* CountingCell.swift */,
+				4B04B01121B385C800064759 /* CountingCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		4B9E527B2188953200283FA6 = {
@@ -217,8 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B04B01321B385C800064759 /* CountingCell.xib in Resources */,
 				4B9E52922188953300283FA6 /* LaunchScreen.storyboard in Resources */,
 				4B9E529C21889A1600283FA6 /* MainVC.xib in Resources */,
+				4B04B00F21B2FA7300064759 /* CircleCell.xib in Resources */,
 				4B04B00421B2B36300064759 /* endPoint.png in Resources */,
 				4B9E528F2188953300283FA6 /* Assets.xcassets in Resources */,
 			);
@@ -262,9 +284,11 @@
 				4B04B00121B2B35500064759 /* YLCircleProgress.swift in Sources */,
 				4B9E529B21889A1600283FA6 /* MainVC.swift in Sources */,
 				4B04B00321B2B36000064759 /* Utils.swift in Sources */,
+				4B04B01221B385C800064759 /* CountingCell.swift in Sources */,
 				4B9E52A0218A0FB600283FA6 /* HNCircleProgress.swift in Sources */,
 				4B04B00221B2B35E00064759 /* YLCircle.swift in Sources */,
 				4B04B00A21B2F2E600064759 /* MainLogic.swift in Sources */,
+				4B04B00E21B2FA7300064759 /* CircleCell.swift in Sources */,
 				4B9E52882188953200283FA6 /* AppDelegate.swift in Sources */,
 				4B04B00721B2F1E900064759 /* BaseVC.swift in Sources */,
 			);

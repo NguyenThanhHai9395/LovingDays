@@ -13,7 +13,7 @@ enum MainLogicState {
     case faild(Error)
 }
 
-protocol MainLogicProtocol {
+private protocol MainLogicProtocol {
     
 }
 
